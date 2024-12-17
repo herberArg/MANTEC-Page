@@ -1,0 +1,328 @@
+/*diseños generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main{
+    background-image: url('img/bg.png');
+    background-size: 80%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.contenedor{
+    padding-top: 30px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Alinear secciones una al lado de la otra */
+.FCC, .Perifericos {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.Remodelaciones, .Infraestructura-IT {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* Limpiar el float para evitar problemas de diseño */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*diseño del header*/
+header {
+    height: 180px;
+    position: relative;
+    background-color: #1d1d1b;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+header img {
+    width: auto; 
+    height: 150px; 
+    position: right;
+    top: 0;
+    right: 0;
+}
+
+/*Diseño del footer*/
+footer{
+    background: #1d1d1b;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #9e9797;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #9e9797;
+    border-bottom: 3px solid #9e9797;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #9e9797;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+/*Carrusel*/
+.carrousel, .Periferico, .Remo, .IT, .Ele{
+    width: 100%;
+}
+
+.conteCarrousel, .contePeriferico, .conteRemo, .conteIT, .conteEle{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel, .itemPeriferico, .itemRemo, .itemIT, .itemEle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta, .itemPerifericoTarjeta, .itemRemoTarjeta, .itemITTarjeta, .itemEleTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows, .itemPerifericoArrows, .itemRemoArrows, .itemITArrows, .itemEleArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows> i:hover {
+    cursor: pointer;
+}
+
+.itemPerifericoArrows> i:hover {
+    cursor: pointer;
+}
+
+.itemRemoArrows> i:hover {
+    cursor: pointer;
+}
+
+.itemITArrows> i:hover {
+    cursor: pointer;
+}
+
+.itemEleArrows> i:hover {
+    cursor: pointer;
+}
+
+.conteCarrouselController, .contePerifericoController, .conteRemoController, .conteITController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.conteEleController
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.conteRemoController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.contePerifericoController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.conteITController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.conteEleController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.itemPerifericoArrows > a > i{
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.itemRemoArrows > a > i{
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.itemITArrows > a > i{
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+i{
+    font-size: 100px;
+}
+
+.imagen-carrusel, .imagen-Periferico, .imagen-Remo, .imagen-IT, .imagen-Ele{
+    width: auto;
+    height: 300px;
+    padding-top: 40px;
+}
+
+.conteCarrouselController a.active {
+    color: #0c8edc; 
+}
+
+.contePerifericoController a.active {
+    color: #0c8edc; 
+}
+
+.conteRemoController a.active {
+    color: #0c8edc;
+}
+
+.conteITController a.active {
+    color: #0c8edc; 
+}
+
+.conteEleController a.active {
+    color: #0c8edc; 
+}
+
+.itemEleArrows {
+    display: flex;
+    justify-content: center;
+}
+
+.itemEleArrows > a {
+    margin: 0 10px; 
+}
+
+.itemEleArrows > a > i {
+    color: black;
+    padding: 200px;
+}
+
+/* Estilos básicos del botón */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    padding: 15px 30px; 
+    font-size: 18px;
+}
+
+  /* Estilo predeterminado */
+.boton-azul {
+    color: #fff;
+    background-color: #007BFF;
+    border: 2px solid #007BFF;
+}
+
+  /* Efecto hover */
+.boton-azul:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* secciòn 1*/
+.contenedor-info-empleado{
+    display: flex;
+    justify-content: center;
+}
+
+
+.info-empleado .contenido-textos{
+    width: 100%;
+    text-align: justify;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.contenido-textos h1{
+    font-size: 50px;
+}
+
+.info-empleado .contenido-textos p{
+    font-size: 30px;
+}
