@@ -45,7 +45,22 @@ main{
     box-sizing: border-box;
 }
 
-/* Limpiar el float para evitar problemas de diseño */
+.Logo img {
+    width: 779px;
+
+}
+
+.Logo h1 {
+    color: #312783;
+    font-size: 73px;
+}
+
+.Logo {
+    padding-bottom: 500px;
+    padding-top: 300px;
+}
+
+/* Limpiar el float para evitar problemas de diseño*/
 .clearfix::after {
     content: "";
     display: table;
